@@ -10,20 +10,49 @@
         .first_section{
             color:whitesmoke;
             background-color:#4da866;
-            width:30%;  
+            width:30%;     
+            position: relative;   
+              /*Relative count form it's own position  */
+            top:50px
+               
             
         }
         .second_section{
             background-color:#737dbf;
             color: white;
-            font-weight: 400 ;
-            
+            font-weight: 400 ;        
+            position: absolute;
+            /* Absolute count from actual top and from left */
+            top:200px;
             width:30%
         }
-        /* .non_floating{
-            /* clear:both ; 
-        } */
-        
+        .click{
+            background-color: #4da866;
+            width:10;
+            border-radius: 40px;
+            /* this is the thing that include in the video */
+            position: fixed;
+            /* this will fixed on a position
+            even page scroll */
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            top: 85%;
+            left: 90%;
+            width: min-content;
+        }
+        .non_floating{
+           position:absolute;
+           top:400px;
+        }
+        .right_column{
+            background-color: teal;
+            height: 48900px;
+            position: absolute;
+            left: 90%;
+            top: 50px;
+        }
+         
 
     </style>
 
@@ -48,7 +77,15 @@
                 <h1>webHacker</h1>
                 <p>Hi there I am going to hack the www</p>
             </div>
-      
+
+            <div class="right_column">
+                <p>Hi there I am testing position fixed option</p>
+            </div>
+
+            <div class="click">
+                <p>Icon <br> click!</p>
+            </div>
+
            
  
         
